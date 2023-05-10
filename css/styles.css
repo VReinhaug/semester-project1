@@ -11,11 +11,17 @@ body {
 
 main {
     margin: 20px;
+    justify-self: center;
 }
 
 h1 {
     font-family: "Nunito Sans", Verdana, Geneva, Tahoma, sans-serif;
     color: #482335;
+}
+
+h2 {
+    font-family: "Taviraj", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4em;
 }
 
 a {
@@ -24,25 +30,27 @@ a {
 }
 
 p {
-    max-width: 100vw;
+    max-width: 650px;
 }
 
 /* Header */
 
 header img {
     max-width: 30vw;
+    max-height: 200px;
 }
 
 .nav-bar {
-    display: inline-flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: auto 1fr;
 }
 
 nav {
     font-weight: 600;
-    font-size: 1.2em;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 1.1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 nav a {
@@ -67,6 +75,29 @@ nav a {
     border: none;
 }
 
+/* Footer */
+
+footer {
+    background-color: #482335;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+footer h2 {
+    margin-bottom: 2px;
+}
+
+footer p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+footer i {
+    margin: 20px 10px;
+}
+
 /* Home page */
 
 .image-link {
@@ -75,6 +106,7 @@ nav a {
     text-align: center;
     display: flex;
     margin-bottom: inherit;
+    max-width: 633px;
 }
 
 .image-link img {
@@ -98,3 +130,43 @@ nav a {
     background-color: #00A1EA;
 }
 
+/* H2 with image */
+
+.img-h2 {
+    display: grid;
+    text-align: center;
+    max-width: 100%;
+    align-items: center;
+    max-width: 650px;
+}
+
+.img-left {
+    grid-template-columns: 60% 40%;
+}
+
+.img-right {
+    grid-template-columns: 40% 60%;
+}
+
+.img-h2 img {
+    max-width: 100%;
+}
+
+/* Desktop */
+
+@media (min-width: 850px) {
+    nav {
+        display: inline;
+        font-size: 1.5em;
+    }   
+     
+    .nav-bar {
+        grid-gap: 2em;
+    }
+
+    .two-column {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4em;    
+    }
+}
