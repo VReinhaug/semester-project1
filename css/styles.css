@@ -40,6 +40,11 @@ header img {
     max-height: 200px;
 }
 
+header img:hover {
+    transform: rotate(45deg);
+    transition-duration: 1s;
+}
+
 .nav-bar {
     display: grid;
     align-items: center;
@@ -57,7 +62,7 @@ nav a {
     padding: 10px;
 }
 
-.current {
+.current, nav a:hover {
     color: #482335;
     text-transform: uppercase;
 }
@@ -107,6 +112,11 @@ footer i {
     display: flex;
     margin-bottom: inherit;
     max-width: 633px;
+}
+
+.image-link:hover {
+    text-transform: uppercase;
+    filter: drop-shadow(1px 1px 5px);
 }
 
 .image-link img {
@@ -159,7 +169,7 @@ footer i {
         display: inline;
         font-size: 1.5em;
     }   
-     
+
     .nav-bar {
         grid-gap: 2em;
     }
