@@ -24,6 +24,10 @@ h2 {
     font-size: 1.4em;
 }
 
+h3 {
+    margin: 0.5em;
+}
+
 a {
     text-decoration: none;
     color: #000000;
@@ -106,11 +110,9 @@ footer i {
 /* Home page */
 
 .image-link {
-    font-weight: 600;
-    font-size: 1.2em;
     text-align: center;
     display: flex;
-    margin-bottom: inherit;
+    margin-bottom: 2em;
     max-width: 633px;
 }
 
